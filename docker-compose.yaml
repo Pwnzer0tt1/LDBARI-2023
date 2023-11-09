@@ -1,0 +1,10 @@
+version: "3"
+services:
+  chall:
+    build: . 
+    ports:
+      - 8080:80
+    deploy:
+      resources:
+        limits:
+          cpus: '3'
